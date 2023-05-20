@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_image"
+    tools:context=".activity.PlayVideoActivity">
+    <!--Gradient to darken background-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/darken_bg" >
+    </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/input_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle_white"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="80dp"
+            android:alpha=".8"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <!--Sign in-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/archivo_black"
+                android:padding="15dp"
+                android:text="YouTube URL"
+                android:textAlignment="center"
+                android:textColor="@color/cadet_blue"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/url_input"
+                android:layout_width="250dp"
+                android:textIsSelectable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_middle2"
+                android:hint="Enter URL"
+                android:layout_marginBottom="70dp"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="PLAY"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:backgroundTint="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btn_add_to_playlist"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="ADD TO PLAYLIST"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:backgroundTint="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btn_my_playlist"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="MY PLAYLIST"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:backgroundTint="@color/black"
+                android:layout_marginBottom="40dp"
+                android:textSize="17sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
